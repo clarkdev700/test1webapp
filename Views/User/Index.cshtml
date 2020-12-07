@@ -1,0 +1,46 @@
+﻿@model  IEnumerable<ApplicationTest1.Models.User>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>List of users</h2>
+<div class="row">
+    <div class="col-md-11">
+        @if ((ApplicationTest1.Models.FlashMessage)ViewBag.Response != null)
+        {
+            <p class="@ViewBag.Response.status">
+                @ViewBag.Response.message
+            </p>
+        }
+        <p><a href="@Url.RouteUrl("_addUser")" title="Add new registration" class="btn btn-primary btn-sm">New registration</a></p>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Cellphone</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.UserId</td>
+                        <td>@user.Username</td>
+                        <td>@user.Usersurname</td>
+                        <td>@user.UserCellPhone</td>
+                        <td class="text-center">
+                            <a href="@Url.Action("Edit", new { id = user.UserId})" title="Edit user"><i class="glyphicon glyphicon-edit"></i></a> |
+                            <span class="text-danger"><a href="@Url.RouteUrl("_deleteUser", new { id = user.UserId})" title="Delete user"><i class="glyphicon glyphicon-remove"></i></a></span>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+
+</div>
+

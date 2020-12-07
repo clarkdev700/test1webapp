@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TPOne", "TPOne.csproj", "{DDC771CD-3F20-46C4-8529-FC8818B5A516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestTPOne", "UnitTestTPOne\UnitTestTPOne.csproj", "{BA21BC7C-6894-4088-BD72-483531BC1BFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDC771CD-3F20-46C4-8529-FC8818B5A516}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDC771CD-3F20-46C4-8529-FC8818B5A516}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDC771CD-3F20-46C4-8529-FC8818B5A516}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDC771CD-3F20-46C4-8529-FC8818B5A516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA21BC7C-6894-4088-BD72-483531BC1BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA21BC7C-6894-4088-BD72-483531BC1BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA21BC7C-6894-4088-BD72-483531BC1BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA21BC7C-6894-4088-BD72-483531BC1BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EAA9CB55-E743-41A9-8FEE-3F71E37D16A4}
+	EndGlobalSection
+EndGlobal
